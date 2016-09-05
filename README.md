@@ -11,16 +11,11 @@
   - LN - laž negativna
   - IN - istina negativna
 
-     | glagol | ostalo  
+
+    | točno | nije točno  
  ------------- |-------------| -----
- odabran glagol      | 12 | 1 
- odabran ostatak      | 8      |   8
-
-
- |     | točno | nije točno  |
-| ------------- |:-------------:| -----:|
-| odabrano      | IP | LP |
-| nije odabrano      | LN      |   IN |
+ odabrano      | IP | LP 
+ nije odabrano      | LN      |   IN 
 ##### Stupac 'točno' označava količinu koju klasifikator izbaci po  trenutnoj vrsti riječi, može biti pozitivno ili negativno, npr. za skup imenica, klasifikator je pogodio da su to imenice (IP) te u suprotnom krivo je pogodio, da nisu imenice (LN). Drugi stupac označava sve ostale vrste riječi, npr. kada klasifikator za sve ostale vrste riječi izbaci da su imenice (LP), te kada klasifikator za sve ostale vrste riječi izbaci da nisu imenice (IN).
 ## 1. Osobina
 
@@ -35,20 +30,24 @@ def osobine(word):
 ```
 #### Naivni Bayes (preciznost, opoziv i F1 mjera)
 ###### Tablica slučaja za imenice, pridjeve i glagole:
+
     | imenica | ostalo                                 
  ------------- |-------------| -----
  odabrana imenica      | 41 | 4 
  odabran ostatak      | 5     |  8 
-
- |     | pridjev | ostalo  |
-| ------------- |:-------------:| -----:|
-| odabran pridjev      | 130 | 12 |
-| odabran ostatak      | 4     |   1|
-
- |     | glagol | ostalo  |
-| ------------- |:-------------:| -----:|
-| odabran glagol      | 12 | 1 |
-| odabran ostatak      | 8      |   8 |
+ 
+ 
+ 
+    | pridjev | ostalo  
+ ------------- |-------------| -----
+ odabran pridjev      | 130 | 12 
+ odabran ostatak      | 4     |   1
+ 
+ 
+      | glagol | ostalo 
+ ------------- |-------------| -----
+ odabran glagol      | 12 | 1
+ odabran ostatak      | 8      |   8 
 
 
 ###### Preciznost imenice: 0,91 % -------Opoziv imenice: 0,46 %---------F1 mjera: 0,61
@@ -56,20 +55,23 @@ def osobine(word):
 ###### Preciznost glagoli: 0,92 %-------Opoziv glagoli: 0,6 %---------F1 mjera: 0,73
 #### Maksimalna entropija (preciznost, opoziv i F1 mjera)
 ###### Tablica slučaja za imenice, pridjeve i glagole:
- |     | imenica | ostalo  |                               
-| ------------- |:-------------:| -----:|
-| odabrana imenica      | 41 | 4 |
-| odabran ostatak      | 5     |  8 |
 
- |     | pridjev | ostalo  |
-| ------------- |:-------------:| -----:|
-| odabran pridjev      | 130 | 12 |
-| odabran ostatak      | 4     |   1|
+      | imenica | ostalo                                
+ ------------- |-------------| -----
+ odabrana imenica      | 41 | 4 
+ odabran ostatak      | 5     |  8 
 
- |     | glagol | ostalo  |
-| ------------- |:-------------:| -----:|
-| odabran glagol      | 12 | 1 |
-| odabran ostatak      | 8      |   8 |
+    | pridjev | ostalo  |
+ ------------- |-------------| -----
+ odabran pridjev      | 130 | 12 
+ odabran ostatak      | 4     |   1
+ 
+ 
+     | glagol | ostalo  
+ ------------- |-------------| -----
+ odabran glagol      | 12 | 1 
+ odabran ostatak      | 8      |   8 
+ 
 ###### Preciznost imenice: 0,91 %-------Opoziv imenice: 0,46 %---------F1 mjera: 0,61
 ###### Preciznost pridjevi: 0,92 %-------Opoziv pridjevi: 0,99 %---------F1 mjera: 0.95
 ###### Preciznost glagoli: 0,92 %------- Opoziv glagoli: 0,6 %---------F1 mjera: 0,73
