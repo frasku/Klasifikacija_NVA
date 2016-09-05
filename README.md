@@ -1,5 +1,6 @@
 # Klasifikacija imenica, glagola i pridjeva
 > Klasifikacija je provedena u programskom jeziku Python. Korišten je modul nltk za klasifikaciju te dva klasifikatora: Naivni Bayes i Maksimalna entropija. Ukupna količina riječi je 2,221,736 od kojih je 75% korišteno za trening, a ostatak 555,434 za testiranje.
+
 ###  Usporedba rezultata kod različitih klasifikatora korištenjem različitih osobina.
 ##### Preciznost: % odabranih elemenata koji su točni? IP/IP+LP
 ##### Opoziv:% točnih elemenata koji su odabrani? IP/IP+LN
