@@ -16,7 +16,7 @@
  ------------- |-------------| -----
  odabrano      | IP | LP 
  nije odabrano      | LN      |   IN 
-##### Stupac 'točno' označava količinu koju klasifikator izbaci po  trenutnoj vrsti riječi, može biti pozitivno ili negativno, npr. za skup imenica, klasifikator je pogodio da su to imenice (IP) te u suprotnom krivo je pogodio, da nisu imenice (LN). Drugi stupac označava sve ostale vrste riječi, npr. kada klasifikator za sve ostale vrste riječi izbaci da su imenice (LP), te kada klasifikator za sve ostale vrste riječi izbaci da nisu imenice (IN).
+> Stupac 'točno' označava količinu koju klasifikator izbaci po  trenutnoj vrsti riječi, može biti pozitivno ili negativno, npr. za skup imenica, klasifikator je pogodio da su to imenice (IP) te u suprotnom krivo je pogodio, da nisu imenice (LN). Drugi stupac označava sve ostale vrste riječi, npr. kada klasifikator za sve ostale vrste riječi izbaci da su imenice (LP), te kada klasifikator za sve ostale vrste riječi izbaci da nisu imenice (IN).
 ## 1. Osobina
 
 ```sh
@@ -184,4 +184,4 @@ Naivni bayes      |0.939     | 0.897 |0.894
  ------------ |-------------| -----|-----
  Maksimalna entropija     | 0.763 |0.823 |0.806
 Naivni bayes      |0.763     | 0.823 |0.806
-##### Vidimo kako su preciznosti između klasifikatora jednake, isto tako i F1 mjere. Razlika je što je klasifikator maksimalne entropije diskriminativni model, a naivni bayes generativni model. Inače, maksimalna entropija je brža ako imamo 2 klase, no mi u ovom slučaju imamo 3 klase (imenice, pridjevi, glagoli), te su zbog toga jednaki u mjerama, iako ne uvijek nužno. Različiti su u brzini izvedbe. Naivni bayes je brži.
+> Vidimo kako su preciznosti između klasifikatora jednake, isto tako i F1 mjere. Razlika je što je klasifikator maksimalne entropije diskriminativni model, a naivni bayes generativni model. Inače, maksimalna entropija je brža ako imamo 2 klase, no mi u ovom slučaju imamo 3 klase (imenice, pridjevi, glagoli), te su zbog toga jednaki u mjerama, iako ne uvijek nužno. Različiti su u brzini izvedbe. Naivni bayes je brži.
