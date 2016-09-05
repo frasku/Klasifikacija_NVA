@@ -17,6 +17,7 @@
  ------------- |-------------| -----
  odabrano      | IP | LP 
  nije odabrano      | LN      |   IN 
+ 
 > Stupac 'točno' označava količinu koju klasifikator izbaci po  trenutnoj vrsti riječi, može biti pozitivno ili negativno, npr. za skup imenica, klasifikator je pogodio da su to imenice (IP) te u suprotnom krivo je pogodio, da nisu imenice (LN). Drugi stupac označava sve ostale vrste riječi, npr. kada klasifikator za sve ostale vrste riječi izbaci da su imenice (LP), te kada klasifikator za sve ostale vrste riječi izbaci da nisu imenice (IN).
 
 ## 1. Osobina
