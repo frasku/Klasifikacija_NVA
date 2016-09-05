@@ -11,7 +11,10 @@
   - LN - laž negativna
   - IN - istina negativna
 
-
+     | glagol | ostalo  
+ ------------- |-------------| -----
+ odabran glagol      | 12 | 1 
+ odabran ostatak      | 8      |   8
 
 
  |     | točno | nije točno  |
