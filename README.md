@@ -35,10 +35,10 @@ def osobine(word):
 ```
 #### Naivni Bayes (preciznost, opoziv i F1 mjera)
 ###### Tablica slučaja za imenice, pridjeve i glagole:
- |     | imenica | ostalo  |                               
-| ------------- |:-------------:| -----:|
-| odabrana imenica      | 41 | 4 |
-| odabran ostatak      | 5     |  8 |
+    | imenica | ostalo                                 
+ ------------- |-------------| -----
+ odabrana imenica      | 41 | 4 
+ odabran ostatak      | 5     |  8 
 
  |     | pridjev | ostalo  |
 | ------------- |:-------------:| -----:|
